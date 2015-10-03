@@ -111,8 +111,8 @@ activate :directory_indexes
 # Activate Deploy
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.branch = 'gh-pages'
-  deploy.remote = 'https://github.com/aleherse/blog-source.git'
+  deploy.branch = 'master'
+  deploy.remote = 'git@github.com:aleherse/aleherse.github.io.git'
   deploy.build_before = true
 end
 
