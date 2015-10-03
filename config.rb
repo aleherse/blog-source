@@ -111,7 +111,8 @@ activate :directory_indexes
 # Activate Deploy
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.branch = 'master'
+  deploy.branch = 'gh-pages'
+  deploy.remote = 'https://github.com/aleherse/blog-source.git'
   deploy.build_before = true
 end
 
@@ -137,7 +138,7 @@ end
 ###
 
 # set site URL
-set :site_url, 'aleherse.com'
+set :site_url, 'http://aleherse.github.io'
 # set site title
 set :site_title, 'Alejandro Hernandez'
 # set site description (only used for meta description for the moment)
