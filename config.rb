@@ -6,14 +6,16 @@ require 'extensions/sitemap.rb'
 
 Time.zone = 'Madrid'
 
+activate :i18n, :langs => [:en, :es], :mount_at_root => false
+
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
 
   # Permalink format
-  blog.permalink = '{year}/{month}/{day}/{title}.html'
+  blog.permalink = '{lang}/{year}/{month}/{day}/{title}.html'
   # Matcher for blog source files
-  blog.sources = 'posts/{year}-{month}-{day}-{title}.html'
+  blog.sources = 'posts/{lang}/{year}-{month}-{day}-{title}.html'
   blog.summary_length = 250
   blog.default_extension = '.md'
   blog.tag_template = 'tag.html'

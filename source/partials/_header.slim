@@ -1,23 +1,31 @@
 .top-menu
   .top-menu-wrapper
-    .top-menu-list
+    .top-menu-list.left
       ul
         li
-          a href="/" class="site-title"
+          a href="/#{I18n.locale}" class="site-title"
             | #{site_title}
         li
-          a href="/archives/"
+          a href="/#{I18n.locale}/archives/"
             | Archives
+        //li
+        //  a href="/#{I18n.locale}/tags/"
+        //    | Tags
         li
-          a href="/tags/"
-            | Tags
-        li
-          a href="/by-year/"
+          a href="/#{I18n.locale}/by-year/"
             | By Year
         //li
         //  a href="/feed.xml"
         //    i.fa.fa-rss-square
     .feed
-      a href="/feed.xml"
+      a href="/#{I18n.locale}/feed.xml"
         i.fa.fa-rss-square
+    .top-menu-list.right
+      ul
+        li
+          a href="/en"
+            | English
+        li
+          a href="/es"
+            | Spanish
 

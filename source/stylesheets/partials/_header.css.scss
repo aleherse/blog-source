@@ -44,9 +44,15 @@ header {
       }
 
       .top-menu-list {
-        float: left;
-        margin-left: 15px;
-        width: 80%;
+        &.left {
+          float: left;
+          margin-left: 15px;
+//          width: 80%;
+        }
+
+        &.right {
+          float: right;
+        }
 
         @include breakpoint($large-screen) {
           margin-left: 30px;
