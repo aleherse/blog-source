@@ -68,7 +68,7 @@ set :images_dir, 'images'
 
 # Markdown settings
 set :markdown_engine, :redcarpet
-set :markdown, hard_wrap: true, \
+set :markdown, hard_wrap: false, \
                no_intra_emphasis: true, \
                fenced_code_blocks: true, \
                gh_blockcode: true, \
